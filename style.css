@@ -36,7 +36,7 @@ body {
 }
 
 .ford {
-    /* border: 3px solid black; */
+    border: 3px solid black;
     height: 70%;
     display: flex;
     justify-content: center;
@@ -44,13 +44,14 @@ body {
     position: absolute;
     top: 200px;
     transition: all ease 2s;
+    flex-wrap: wrap;
     opacity: 1
 }
 
 
 .horse
 {  
-    /* border: 3px solid gold; */
+    border: 3px solid gold;
     height: 70%;
     display: flex;
     justify-content: center;
