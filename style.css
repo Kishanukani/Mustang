@@ -60,6 +60,8 @@ body {
     top: 110px;
     transition: all ease 2s;
     opacity: 0;
+    flex-wrap: wrap;
+
 }
 
 #time {
