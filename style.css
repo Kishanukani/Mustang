@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: aquamarine;
+
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.container2:hover{
+    cursor: pointer;
+    .ford{
+        opacity: 0;
+        cursor: pointer;
+    }
+
+    .horse{
+        opacity: 1;
+        cursor: pointer;
+    }
+}
+
+.ford {
+    /* border: 3px solid black; */
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 200px;
+    transition: all ease 2s;
+    opacity: 1
+}
+
+
+.horse
+{  
+    /* border: 3px solid gold; */
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 110px;
+    transition: all ease 2s;
+    opacity: 0;
+}
+
+#time {
+    font-size: 250px;
+    position: relative;
+    text-align: center;
+    top: 150px;
+    opacity: 5464;
+}
+
+@media (min-width:220px) and (max-width: 320px) {
+    body {
+        background-color: gold;
+    
+    }
+    .ford{
+        height: 35%;
+        top: 150px;
+    }
+    .horse{
+        /* height: 35%; */
+        top: 117.5px;
+    }
+    #time{
+    font-size: 85px;
+    top: 139px;
+
+    }
+}
+
+@media (min-width:320px) and (max-width: 375px) {
+    body {
+        background-color: orchid;
+    
+    }
+    .ford{
+        height: 37.5%;
+        top: 150px;
+    }
+    .horse{
+        height: 85%;
+        top: 117.5px;
+    }
+    #time{
+    font-size: 95px;
+    top: 139px;
+
+    }
+}
+@media (min-width:375px) and (max-width: 425px) {
+    body {
+        background-color: darkblue;
+    
+    }
+    .ford{
+        height: 40%;
+        top: 150px;
+    }
+    .horse{
+        height: 50%;
+        top: 117.5px;
+    }
+    #time{
+    font-size: 105px;
+    top: 139px;
+
+    }
+}
+/* @media  and (max-width: 768px) */
+@media (min-width: 425px) and (max-width: 768px) {
+    body {
+        background-color: lightcoral;
+    
+    }
+    .ford{
+        height: 55%;
+        top: 195px;
+    }
+    .horse{
+        height: 100%;
+        top: 117.5px;
+    }
+    #time{
+    font-size: 150px;
+    top: 139px;
+
+    }
+}
