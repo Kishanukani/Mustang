@@ -6,6 +6,8 @@
 
 body {
     background-color: aquamarine;
+    height: 90vh;
+    width: 98vw;
 
 }
 
@@ -36,13 +38,16 @@ body {
 }
 
 .ford {
-    border: 3px solid black;
+    /* border: 3px solid black; */
     height: 70%;
     display: flex;
     justify-content: center;
     align-items: center;
     position: absolute;
-    top: 200px;
+    top: 180px;
+    overflow: hidden;
+    /* margin-bottom: 20px; */
+    filter: drop-shadow(10px 10px 10px rgb(2, 1, 2));
     transition: all ease 2s;
     flex-wrap: wrap;
     opacity: 1
@@ -51,8 +56,10 @@ body {
 
 .horse
 {  
+        overflow: hidden;
     border: 3px solid gold;
     height: 70%;
+        filter: drop-shadow(10px 10px 10px rgb(2, 1, 2));
     display: flex;
     justify-content: center;
     align-items: center;
