@@ -5,8 +5,11 @@
 }
 
 body {
-    background-color: aquamarine;
-    height: 90vh;
+    background-color:aquamarine;
+    /* background-color: (90deg, #efd5ff 0%, #515ada 100%); */
+     /* linear-gradient(90deg, #efd5ff 0%, #515ada 100%); */
+    /* background:  */
+     height: 90vh;
     width: 98vw;
 
 }
@@ -26,7 +29,7 @@ body {
     width: auto;
     /* margin: 50px; */
     /* height: 100%; */
-    border: darkslateblue solid 2px;
+    /* border: darkslateblue solid 2px; */
 
 }
 .container2:hover{
@@ -39,21 +42,21 @@ body {
     .horse{
         opacity: 1;
         cursor: pointer;
+        /* scale: 1.2; */
     }
 }
 
 .ford {
-    border: 3px solid black;
+    /* border: 3px solid black; */
     height: 70%;
-    width: 60%;
+    width: 70%;
+    margin-left: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
     position: absolute;
     top: 180px;
-    overflow: hidden;
-    /* margin-bottom: 20px; */
-    filter: drop-shadow(10px 10px 10px rgb(2, 1, 2));
+    filter: drop-shadow(10px 10px 10px rgb(0, 0, 0));
     transition: all ease 2s;
     flex-wrap: wrap;
     opacity: 1
@@ -63,10 +66,10 @@ body {
 .horse
 {  
     overflow: hidden;
-    border: 3px solid gold;
-    height: 85%;
-    width: 90%;
-    filter: drop-shadow(10px 10px 10px rgb(2, 1, 2));
+    /* border: 3px solid gold; */
+    height: 80%;
+    width: 80%;
+    filter: drop-shadow(10px 10px 10px   #000000 );
     display: flex;
     justify-content: center;
     align-items: center;
@@ -75,21 +78,22 @@ body {
     transition: all ease 2s;
     opacity: 0;
     flex-wrap: wrap;
-
+    
 }
 
 #time {
+    text-shadow: 2px 2px 5px black;
     font-size: 250px;
     position: relative;
     text-align: center;
     top: 150px;
-    opacity: 5464;
+    /* opacity: 5464;    */
 }
 
-@media (min-width:220px) and (max-width: 320px) {
+@media  (max-width: 320px) {
     body {
         background-color: gold;
-    
+        
     }
     .ford{
         height: 35%;
@@ -101,33 +105,40 @@ body {
         top: 117.5px;
     }
     #time{
-    font-size: 85px;
-    top: 139px;
-
+        font-size: 85px;
+        top: 139px;
+        
     }
 }
 
 @media (min-width:320px) and (max-width: 375px) {
     body {
-        background-color: orchid;
-    
+        /* background-color: orchid; */
+        background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
+        
     }
     .ford{
-        height: 50%;
+        height: 30%;
         /* height: 37.5%; */
         width: 100%;
-        top: 150px;
+        top: 155px;
+        filter: drop-shadow(15px 15px 10px   grey );
     }
     .horse{
-        height: 50%;
-        width: 90%;
-        top: 117.5px;
+        height: 35%;
+        width: 110%;
+        filter: drop-shadow(8px 8px 10px   grey );
+        top: 135px;
     }
     #time{
+    text-shadow: 2px 2px 5px grey;    
     font-size: 95px;
     top: 139px;
 
     }
+    /* .container:hover{
+        scale: 1.2;
+    } */
 }
 @media (min-width:375px) and (max-width: 425px) {
     body {
@@ -136,17 +147,23 @@ body {
     }
     .ford{
         height: 40%;
-        /* width: 100%; */
-        width: 90%;
-        top: 150px;
-    }
-    .horse{
-        height: 50%;
-        top: 117.5px;
-    }
-    #time{
+    filter: drop-shadow(10px 10px 10px white);
+    
+    /* width: 1100px; */
+    width: 100%;
+    top: 150px;
+}
+.horse{
+    height: 60%;
+    width: 150%;
+    /* margin-right: 150px; */
+    filter: drop-shadow(10px 10px 10px white);
+    top: 117.5px;
+}
+#time{
     font-size: 105px;
     top: 139px;
+    text-shadow: 2px 2px 5px white;
 
     }
 }
@@ -157,17 +174,45 @@ body {
     
     }
     .ford{
-        height: 55%;
+        filter: drop-shadow(15px 15px 15px rgb(0, 0, 0));
+        height: 30%;
         width: 70%;
         top: 195px;
     }
     .horse{
-        height: 70%;
-        top: 117.5px;
+        filter: drop-shadow(15px 15px 15px rgb(0, 0, 0));
+        height: 35%;
+        top: 170.5px;
     }
     #time{
+        text-shadow: 2px 2px 5px black;
     font-size: 150px;
     top: 139px;
 
     }
 }
+/* /* @media (min-width: 768px)  and (max-width:1180px){ */
+@media (min-width: 820px) and (max-width: 1180px) {
+
+    body {
+        background-color: rgb(128, 240, 139);
+    
+    }
+    .ford{
+        filter: drop-shadow(15px 15px 15px rgb(0, 0, 0));
+        height: 35%;
+        width: 70%;
+        top: 155px;
+    }
+    .horse{
+        filter: drop-shadow(15px 15px 15px rgb(0, 0, 0));
+        height: 35%;
+        top: 150.5px;
+    }
+    #time{
+        text-shadow: 2px 2px 5px black;
+    font-size: 150px;
+    top: 139px;
+
+    }
+} */
